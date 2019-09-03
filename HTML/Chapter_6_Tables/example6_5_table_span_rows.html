@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<head>
+    <title>colspan attribute</title>
+</head>
+
+<style>
+        body {
+            padding: 100px;
+        }
+        
+        #content-container {
+            height: 200px;
+            margin: auto;
+            width: 400px;
+        }
+
+        td, th {
+            background-color: lightgray;
+            text-align: center;
+            width: 150px;
+        }
+    </style>
+
+<body>
+    <div id="content-container">
+        
+
+        <table>
+            <tr>
+                <th></th>
+                <th>Mon</th>
+                <th>Tue</th>
+            </tr>
+            <tr>
+                <th>8am - 9am</th>
+                <td rowspan="2">Algebra</td>
+                <td>Physics</td>
+            </tr>
+            <tr>
+                <th>9am - 10am</th>
+                <td>PE</td>
+            </tr>
+        </table>
+
+
+    </div>
+</body>
+</html>
+  

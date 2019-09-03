@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<head>
+    <title>thead, tbody, tfoot</title>
+</head>
+
+<style>
+        body {
+            padding: 100px;
+        }
+        
+        #content-container {
+            height: 200px;
+            margin: auto;
+            width: 400px;
+        }
+
+        table {
+            background: darkslategray;
+        }
+
+        tfoot td, tfoot th {
+            background-color: lightsteelblue;
+            text-align: center;
+            width: 150px;
+        }
+
+       tbody td, tbody th {
+            background-color: lightgray;
+            text-align: center;
+            width: 150px;
+        }
+
+        thead th {
+            background: lightslategray;
+        }
+</style>
+
+<body>
+    <div id="content-container">
+        
+
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Hours Worked</th>
+                    <th>Amount Earned</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Mon</th>
+                    <td>8</td>
+                    <td>$160</td>
+                </tr>
+                <tr>
+                    <th>Tue</th>
+                    <td>5</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <th>Wed</th>
+                    <td>7</td>
+                    <td>$140</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th></th>
+                    <td>20</td>
+                    <td>$400</td>
+                </tr>
+            </tfoot>
+        </table>
+
+
+    </div>
+</body>
+</html>
+  
