@@ -15,8 +15,14 @@
             margin: auto;
             width: 400px;
         }
+
+        #home-link {
+            position: fixed;
+            top: 20px;
+        }
 </style>
 <body>
+    <a id="home-link" href="../../index.html">Home</a>
     <div id="content-container">
 
         <?php

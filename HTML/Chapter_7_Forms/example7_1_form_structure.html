@@ -14,18 +14,22 @@
             margin: auto;
             width: 400px;
         }
+
+        #home-link {
+            position: fixed;
+            top: 20px;
+        }
 </style>
 
 <body>
+    <a id="home-link" href="../../index.html">Home</a>
     <div id="content-container">
-
         
 
-        <form action="welcome.php" method="get">
+        <form action="welcome.php" method="post">
             <input type="text" name="name" placeholder="name" />
             <input type="submit" value="submit" />
         </form>
-
 
 
     </div>
