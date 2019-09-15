@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Video with autoplay</title>
+</head>
+
+<style>
+    body {
+        padding: 100px;
+    }
+    
+    #content-container {
+        margin: auto;
+        max-width: 600px;
+    }
+
+    #home-link {
+        position: fixed;
+        top: 20px;
+    }
+</style>
+
+<body>
+    <a id="home-link" href="../../index.html">Home</a>
+    <div id="content-container">
+
+        
+        <h3>Video Element</h3>
+
+        <!--This is a video with autoplay-->
+        <!-- In some browsers autoplay only works when muted -->
+        <video src="videos/waterfall.mp4" width="530" height="300" autoplay controls muted></video>
+
+        
+    </div>
+</body>
+</html>
