@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Selectors</title>
+    <link href="selectors.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <h1>Selectors</h1>
+    <table>
+        <tr>
+            <th>Selector</th>
+            <th>Example</th>
+            <th>Meaning</th>
+        </tr>
+        <tr>
+            <td>Universal</td>
+            <td class="example">* { }</td>
+            <td>Applies to all elements on the page</td>
+        </tr>
+        <tr>
+            <td>Type</td>
+            <td class="example">p { }</td>
+            <td>Matches element names</td>
+        </tr>
+        <tr>
+            <td>Class</td>
+            <td class="example">.red { }</td>
+            <td>Applies to all elements with the given class</td>
+        </tr>
+        <tr>
+            <td>Id</td>
+            <td class="example">#navigation { }</td>
+            <td>Applies to the element with the given id</td>
+        </tr>
+        <tr>
+            <td>Child</td>
+            <td class="example">ul>li { }</td>
+            <td>Matches an element that is a direct child of another</td>
+        </tr>
+        <tr>
+            <td>Descendant</td>
+            <td class="example">nav a { }</td>
+            <td>Matches all specified descendants</td>
+        </tr>
+        <tr>
+            <td>Adjacent Sibling</td>
+            <td class="example">h1+p { }</td>
+            <td>Matches an element that is the next sibling of another</td>
+        </tr>
+        <tr>
+            <td>General Sibling</td>
+            <td class="example">h1~p { }</td>
+            <td>Matches an element that is a sibling of another</td>
+        </tr>
+    </table>
+</body>
+</html>
