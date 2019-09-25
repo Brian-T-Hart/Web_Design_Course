@@ -1,0 +1,104 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: auto;
+    max-width: 600px;
+    padding: 20px;
+}
+
+li {
+    padding-top: 5px;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+    max-width: 1200px;
+    text-align: center;
+    width: 80%;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+td, th {
+    border: 1px solid #ddd;
+    min-width: 100px;
+    padding: 8px;
+}
+
+th {
+    background-color:#6495ED;
+    color: #fff;
+}
+
+#rgb-circles {
+    display: block;
+    height: auto;
+    margin: auto;
+    width: 200px;
+}
+
+.bg-black {
+    background-color: #000;
+}
+
+.bg-blue {
+    background-color: #0000FF;
+}
+
+.bg-red {
+    background-color: #FF0000;
+}
+
+.centered {
+    text-align: center;
+}
+
+.contrast-box {
+    width: 25%;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+}
+
+.blue {
+    color: #2A00FA;
+}
+
+.green {
+    color: #7FFF00; /*Chartreuse*/
+}
+
+.red {
+    color: #E62E2D;
+}
+
+.white {
+    color: #FFF;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.main-list>li {
+    color: blue;
+}
+
+.opacity-box {
+    width: 150px;
+    height: 150px;
+}
+
+.pt-2 {
+    padding-top: 2rem;
+}

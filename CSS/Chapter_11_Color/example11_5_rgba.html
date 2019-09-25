@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>rgba</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <style>
+        img {
+            height: auto;
+            padding: 10px 0 0;
+            width: 250px;
+            
+        }
+        #example2 {
+            color: rgb(255,255,255);
+            color: rgba(255,255,255,0.7);
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 class="centered">Color & Opacity</h1>
+
+    <div class="d-flex">
+        <div class="bg-blue opacity-box d-flex">
+            <h1 id="example1" class="white">Hello!</h1>
+        </div>
+
+        <div class="bg-blue opacity-box d-flex">
+            <h1 id="example2">Hello!</h1>
+        </div>
+    </div>
+
+    <h3 class="blue">rgba</h3>
+    <ul>
+        <li>You can set both the color and the opacity using the rgba property</li>
+        <li>The rgba property adds a fourth number for opacity</li>
+        <li><i>Example: </i><span class="red">rgba(255, 255, 255, 0.7);</span></li>
+        <li>It is recommended that you set both rgb and rgba properties so colors will display properly in older browsers that do not recognize rgba.</li>
+        <img src="images/rgba1.PNG" alt="css code example" />
+        <li>If the browser does not recognize rgba, it will use the rgb values and the result will be the image on the left</li>
+    </ul>
+
+</body>
+</html>

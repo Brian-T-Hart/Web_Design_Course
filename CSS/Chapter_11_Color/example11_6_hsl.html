@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>hsl</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <style>
+        img {
+            display: block;
+            margin: auto;
+            height: auto;
+            padding: 10px 0 0;
+            max-width: 400px;
+            width: 90%;
+        }
+
+        #hsl {
+            background-color: #0000FF;
+            background-color: hsl(240,100%,50%);
+        }
+
+        #hsla {
+            background-color: #0000FF;
+            background-color: hsla(240,100%,50%,0.5);
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 class="centered">hsl & hsla</h1>
+
+    <div class="d-flex">
+        <div id="hsl" class="opacity-box d-flex">
+            <h1 id="example1" class="white">hsl</h1>
+        </div>
+
+        <div id="hsla" class="opacity-box d-flex">
+            <h1 id="example2" class="white">hsla</h1>
+        </div>
+    </div>
+
+    <h3 class="blue">hsl</h3>
+    <ul>
+        <li>With CSS3 came a new way to specify colors using hue, saturation, and lightness</li>
+        <li>Hue is the color and is a number from 0 to 360</li>
+        <li>Saturation refers to the amount of gray in the color and the value is given as a percent from 0% to 100%</li>
+        <li>Lightness has to do with the amount of white or black in a color and is also given as a percent</li>
+    </ul>
+
+    <h3 class="blue">hsla</h3>
+    <ul>
+        <li>You can use hsla to apply color and opacity with one css rule</li>
+        <li>It is a good idea to use a backup value for older browsers</li>
+    </ul>
+
+    <img src="images/hsl1.PNG" alt="hsl and hsla code example" />
+
+
+</body>
+</html> 
