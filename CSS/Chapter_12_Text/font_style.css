@@ -155,3 +155,34 @@ input[type="text"]:focus {
 input[type="submit"]:active {
     background-color: #ff0000;
 }
+
+/* attribute selectors */
+
+/* p element that has a class attribute */
+p[class] {
+    color: #009900;
+}
+
+/* p element where the class="red" */
+p[class="red"] {
+    color: #ff0000;
+}
+
+/* p element where class list contains blue */
+p[class~="blue"] {
+    color: #0000ff;
+}
+
+/* p element where name attribute begins with p */
+p[name^="p"] {
+    color: purple;
+}
+
+/* p element where name attribute contains the string 'sub' */
+p[name*="sub"] {
+    color: orange;
+}
+
+p[name$="a"] {
+    color: magenta;
+}
