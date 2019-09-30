@@ -1,0 +1,157 @@
+body {
+    padding: 20px;
+}
+
+.container {
+    margin: auto;
+    max-width: 800px;
+}
+
+p.normal {
+    font-style: normal;
+}
+
+p.italic {
+    font-style: italic;
+}
+
+p.oblique {
+    font-style: oblique;    
+}
+
+
+/* text-transform */
+
+h2.lowercase {
+    text-transform: lowercase;
+}
+
+h2.capitalize {
+    text-transform: capitalize;
+}
+
+h2.uppercase {
+    text-transform: uppercase;
+}
+
+/* text-decoration  */
+
+h1.none {
+    text-decoration: none;
+}
+
+h2.overline {
+    text-decoration: overline;
+}
+
+h2.line-through {
+    text-decoration: line-through;
+}
+
+h2.underline {
+    text-decoration: underline;
+}
+
+/* line-height  */
+
+#lh-container.container {
+    max-width: 500px;
+}
+
+p.normal {
+    line-height: 1em;
+}
+
+p.line-height {
+    line-height: 1.5em;
+}
+
+/* letter-spacing */
+
+.ls-medium {
+    letter-spacing: 0.1rem;
+}
+
+.ls-high {
+    letter-spacing: 0.25rem;
+}
+
+/* word spacing */
+
+.ws-medium {
+    word-spacing: 0.5rem;
+}
+
+.ws-high {
+    word-spacing: 2rem;
+}
+
+/* text indent  */
+
+.indent-none {
+    text-indent: 0;
+}
+
+.indent-positive {
+    text-indent: 30px;
+}
+
+.indent-negative {
+    text-indent: -30px;
+}
+
+/* text-shadow */
+
+.shadow-none {
+    text-shadow: none;
+}
+
+.shadow-drop {
+    text-shadow: 1px 1px #000000; /*1px right, 1px down, black*/
+}
+
+.shadow-emboss {
+    background-color: #ccc;
+    color: #fff;
+    text-shadow: -2px -2px 5px #000; /*2px left, 2px up, 5px blur, black*/
+}
+
+/* pseudo-elements */
+
+p.first-letter:first-letter {
+    font-size: 200%;
+}
+
+p.first-line:first-line {
+    font-weight: bold;
+}
+
+/* pseudo-classes */
+
+a:link {
+    color: #000;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    background-color: #ccc;
+}
+
+a:active {
+    color: #0000ff;
+}
+
+input[type="submit"]:hover {
+    background-color: #00aa00;
+}
+
+input[type="text"]:focus {
+    border: 2px solid #00aaff;
+}
+
+input[type="submit"]:active {
+    background-color: #ff0000;
+}

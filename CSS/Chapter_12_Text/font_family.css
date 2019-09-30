@@ -1,0 +1,108 @@
+/* ------Serif----- */
+.serif {
+    font-family: serif;
+}
+
+.georgia {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.times {
+    font-family: Times, 'Times New Roman', serif;
+}
+
+.times-new {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* -----Sans-Serif----- */
+.sans-serif {
+    font-family: sans-serif;
+}
+
+.arial {
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+}
+
+.verdana {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.helvetica {
+    font-family: Helvetica,Verdana, Arial, sans-serif;
+}
+
+
+/* -----Monospace----- */
+.monospace {
+    font-family: monospace;
+}
+
+.courier {
+    font-family: Courier, 'Courier New', monospace;
+}
+
+.courier-new {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.consolas {
+    font-family: Consolas, Courier, 'Courier New', monospace; 
+}
+
+
+/* -----Cursive----- */
+.cursive {
+    font-family: cursive;
+}
+
+.comic-sans-ms {
+    font-family: 'Comic Sans MS', 'Monotype Corsiva', cursive;
+}
+
+.monotype-corsiva {
+    font-family: 'Monotype Corsiva', 'Comic Sans MS', cursive;
+}
+
+
+/* -----Fantasy----- */
+.fantasy {
+    font-family: fantasy;
+}
+
+.impact {
+    font-family: Impact, Haettenschweiler, fantasy;
+}
+
+.haettenschweiler {
+    font-family: Haettenschweiler, Impact, sans-serif
+}
+
+/* general styles */
+body {
+    padding: 20px;
+}
+
+h1 {
+    color: rgb(68, 0, 255);
+}
+
+h2 {
+    color: rgb(255, 200, 100);
+}
+
+.container {
+    margin: auto;
+    max-width: 800px;
+}
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.typeface-container {
+    min-width: 200px;
+}

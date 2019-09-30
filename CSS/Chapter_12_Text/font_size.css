@@ -1,0 +1,33 @@
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-size: 12px;
+    padding: 20px;
+}
+
+p {
+    font-size: 1rem; /* 16px */
+}
+
+
+.parent {
+    font-size: 12px;
+}
+
+.child {
+    font-size: 1em; /* 12px */
+}
+
+.container {
+    margin: auto;
+    max-width: 800px;
+}
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
