@@ -1,0 +1,18 @@
+h1 {
+    border: 2px solid #ddd;
+    text-align: center;
+}
+
+p {
+    border: 2px solid #ddd;
+    margin: 20px auto;
+    padding: 10px;
+    width: 300px;
+}
+
+img {
+    display: block;
+    height: auto;
+    margin: auto;
+    width: 324px;
+}

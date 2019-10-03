@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px;
+}
+
+.container {
+    margin: auto;
+    max-width: 600px;
+}
+
+.solid {
+    border: 2px solid black;
+}
+
+.dotted {
+    border: 2px dotted black;
+}
+
+.dashed {
+    border: 2px dashed black;
+}
+
+.double {
+    border: 4px double black;
+}
+
+.groove {
+    border: 4px groove #ccc;
+}
+
+.ridge {
+    border: 4px ridge #ccc;
+}
+
+.inset {
+    border: 2px inset #ccc;
+}
+
+.outset {
+    border: 2px outset #ccc;
+}
+
+.mixed {
+    border-style: dashed solid double dotted;
+    border-width: 2px 2px 4px 2px;
+}
+
+.bc-red {
+    border-color: hsla(360, 100%, 50%,0.5);
+}

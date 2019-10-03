@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px;
+}
+
+.parent {
+    background-color: lightgray;
+    width: 100%;
+    height: 50%;
+}
+
+.box {
+    background-color: #ff0000;
+    color: #fff;
+    height: 50%;
+    text-align: center;
+    width: 50%;
+}
+
+.container {
+    margin: auto;
+    max-width: 80%;
+}
+
+.block {
+    display: block;
+}
+
+.inline {
+    display: inline;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.elastic {
+    max-width: 600px;
+    min-width: 250px;
+}
+
+.overflow-example {
+    border: 1px solid silver;
+    height: 200px;
+    overflow: scroll;
+    width: 300px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.box-shadow {
+    box-shadow: 2px 2px 5px 5px #777;
+    height: 150px;
+    margin: 40px auto;
+    padding-top: 100px;
+    width: 300px;
+}
+
+.border-radius {
+    border: 2px solid silver;
+    border-radius: 10px;
+    height: 150px;
+    margin: 40px auto;
+    padding-top: 100px;
+    width: 300px;
+}
