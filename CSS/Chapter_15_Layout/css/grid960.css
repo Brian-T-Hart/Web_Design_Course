@@ -1,0 +1,41 @@
+.col-12 {
+    float: left;
+    margin: 10px;
+    width: 940px;
+}
+
+.col-9 {
+    float: left;
+    margin: 10px;
+    width: 700px;
+}
+
+.col-8 {
+    float: left;
+    margin: 10px;
+    width: 620px;
+}
+
+.col-6 {
+    float: left;
+    margin: 10px;
+    width: 460px;
+}
+
+.col-4 {
+    float: left;
+    margin: 10px;
+    width: 300px;
+}
+
+.col-3 {
+    float: left;
+    margin: 10px;
+    width: 220px;
+}
+
+.col-2 {
+    float: left;
+    margin: 10px;
+    width: 140px;
+}
