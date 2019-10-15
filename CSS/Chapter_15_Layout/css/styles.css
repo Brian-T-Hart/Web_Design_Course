@@ -1,4 +1,4 @@
-/* import the grid960 stylesheet into this style sheet */
+/* import the grid960 stylesheet into this stylesheet */
 @import url('grid960.css');
 
 * {
@@ -21,12 +21,15 @@ h1 {
     background-color: #fff;
     margin: auto;
     overflow: auto;
-    padding: 10px 0;
     width: 960px;
 }
 
 .text-black {
     color: #000;
+}
+
+.bg-gray {
+    background-color: gray;
 }
 
 .bg-pink {

@@ -39,3 +39,17 @@
     margin: 10px;
     width: 140px;
 }
+
+.col-1 {
+    float: left;
+    margin: 10px;
+    width: 60px;
+}
+
+.col-1.ruler {
+    border: 1px solid #ccc;
+    color: #ccc;
+    float: left;
+    margin: 0 0 10px;
+    width: 80px;
+}
