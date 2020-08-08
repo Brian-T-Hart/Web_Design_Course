@@ -1,0 +1,25 @@
+body {
+    padding-top: 100px;
+}
+#content-container {
+    width: 500px;
+    margin: auto;
+}
+
+ol {
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1.2em;
+    margin: auto;
+    padding: 20px;
+    width: 200px;
+}
+
+li {
+    margin-left: 1em;
+}
+
+.text-center {
+    text-align: center;
+}

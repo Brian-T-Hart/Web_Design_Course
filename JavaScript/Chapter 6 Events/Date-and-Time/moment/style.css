@@ -1,0 +1,23 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    height: 100vh;
+    padding-top: 100px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#my-form {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#test {
+    background-color: #f8f8f8;
+    border-width: 0;
+    color: #0000FF;
+    font-size: 1em;
+    outline: 0;
+    max-width: 340px;
+}

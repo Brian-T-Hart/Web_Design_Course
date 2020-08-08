@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Design and Define</title>
+    <style>
+        form {
+            border: 4px double black;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 200px auto 20px auto;
+            width: 400px;
+        }
+
+        fieldset {
+            border-width: 0;
+            width: 70%;
+            margin: auto;
+        }
+
+        h2 {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        input#name {
+            border-radius: 5px;
+            font-size: 1em;
+            margin: 3px 0 10px;
+            padding-left: 10px;
+            width: 100%;
+        }
+
+        input[type='submit'] {
+            background-color: black;
+            border-radius: 5px;
+            color: orange;
+            float: right;
+            padding: 5px;
+        }
+
+        label {
+            font-size: 1em;
+            font-weight: bold;
+        }
+
+        #error-message {
+            display: none;
+            color: red;
+            font-size: 11px;
+        }
+
+        #cost {
+            color: #009900;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form class="container" onsubmit="calculateCost()">
+        <h2>Custom Signage</h2>
+        <fieldset>
+            <label for="name">Enter name:</label><span id="error-message"> Please enter a name below</span><br />
+            <input type="text" id="name" name="name" autofocus><br />
+            <input type="submit" value="show cost">
+        </fieldset>
+    </form>
+    <h1 id="cost"></h1>
+
+<script>
+    function calculateCost() {
+        event.preventDefault(); //stop form from refreshing the page
+
+        var name = event.target.name.value; //get name and store in variable
+
+        if (name.length == 0) { //If nothing is entered, diplay error message
+            var error = document.getElementById('error-message');
+            error.style.display = 'inline';
+        }
+
+        else { 
+            var cost = name.length * 5; //calculate cost
+            document.getElementById('cost').innerText = '$' + cost; //display cost
+        }
+    }
+</script>
+</body>
+</html>

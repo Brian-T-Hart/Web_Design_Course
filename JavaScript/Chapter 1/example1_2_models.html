@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Models</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    var car = {
+        //properties and values
+        make: 'Honda',
+        model: 'Civic',
+        year: 2005,
+        color: 'gray',
+        currentSpeed: 30,
+        //methods
+        honk() {
+            document.write('<h1>beep! beep!</h1>');
+        },
+
+        getCurrentSpeed() {
+            document.write('<h1>Your current speed is ' + this.currentSpeed + ' mph.</h1>');
+        }
+    }
+
+    console.log(car);
+</script>
+</html>
