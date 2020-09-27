@@ -20,7 +20,7 @@
     <meta name="description" content="Page with meta tags">
 
     <!-- refresh content at given number of seconds -->
-    <meta http-equiv="refresh" content="30">
+    <meta http-equiv="refresh" content="10">
 
 </head>
 
@@ -47,7 +47,20 @@
 
         <h2>meta tags</h2>
 
+        <h3 id="timer"></h3>
+
         
     </div>
+
+<script>
+    var count = 0;
+    var timer = document.getElementById('timer');
+
+    setInterval(function() {
+        count = count + 1;
+        timer.innerHTML = count;
+    }, 1000);
+
+</script>
 </body>
 </html>
