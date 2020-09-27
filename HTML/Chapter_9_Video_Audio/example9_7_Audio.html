@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Audio</title>
+</head>
+
+<style>
+    body {
+        padding: 20px 100px;
+    }
+
+    audio {
+        display: block;
+        margin: auto;
+    }
+
+    p, h1 {
+        text-align: center;
+    }
+    
+    #content-container {
+        margin: auto;
+        max-width: 600px;
+    }
+
+    #home-link {
+        position: fixed;
+        top: 20px;
+    }
+</style>
+
+<body>
+    <a id="home-link" href="../../index.html">Home</a>
+    <div id="content-container">
+   
+        <h1>Audio Element</h1>
+        
+        <p>Elvis - I Can't Help Falling in Love</p>
+        <audio controls preload="auto">
+            <source src="audio/elvis.ogg" type="audio/ogg" />
+            <source src="audio/elvis.mp3" type="audio/mpeg" />
+            <p>This browser does not support our audio format.</p>
+        </audio>
+        
+        <!-- audio example found at https://freemp3downloads.online/ -->
+    </div>
+</body>
+</html>
