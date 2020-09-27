@@ -26,7 +26,16 @@
     <div id="content-container">
 
         <?php
-            echo '<h1>Hello ' . htmlspecialchars($_GET["name"]) . '!</h1>';
+            $userName = test_input($_POST["name"]);
+
+            echo "<h1>Hello {$userName}</h1>";
+
+            function test_input($data) {
+                $data = trim($data);
+                $data = stripslashes($data);
+                $data = htmlspecialchars($data);
+                return $data;
+            }
         ?>
 
     </div>
