@@ -8,20 +8,31 @@
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            text-align: center;
+        }
+
+        button:focus {
+            background-color: blue;
+            color: white;
         }
 
         .container {
-            background-color: #ccc;
-            margin: auto;
+            border: 2px dotted #0000FF;
+            margin: 2em auto;
             max-width: 600px;
             overflow: auto;
+            padding: 20px;
             text-align: center;
         }
 
         .box {
+            align-items: center;
             border: 2px solid #000;
             box-sizing: border-box;
-            float: left;
+            display: flex;
+            justify-content: center;
+            float: none;
             height: 100px;
             width: 100px;
             margin: 10px;
@@ -46,13 +57,25 @@
         .clear-both {
             clear: both;
         }
+
+        .marg-20 {
+            margin: 20px;
+        }
+
+        .text-center {
+            text-align: center;
+        }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <h1>z-index</h1>
+    <h1 class="marg-20 text-center">z-index</h1>
 
+    <button id="none" onclick="setFloat()" autofocus>none</button>
+    <button id="left" onclick="setFloat()">left</button>
+    <button id="right" onclick="setFloat()">right</button>
+
+    <div class="container">
         <div class="box">1</div>
         <div class="box">2</div>
         <div class="box">3</div>
@@ -65,6 +88,16 @@
         <div class="box">10</div>
 
     </div>
+
+    <script>
+        function setFloat() {
+            var boxes = document.querySelectorAll('.box');
+
+            for (i = 0; i < boxes.length; i++) {
+                boxes[i].style.cssFloat = event.target.id;
+            }
+        }
+    </script>
 </body>
 
 </html>
