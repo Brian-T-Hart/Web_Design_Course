@@ -14,29 +14,42 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        button:focus {
+            background-color: blue;
+            color: white;
+        }
+
+        .bg-gray {
+            background-color: #ccc;
+        }
+
         .container {
             margin: auto;
             max-width: 400px;
             min-height: 150vh;
+            text-align: center;
+        }
+
+        .marg-0 {
+            margin: 0;
+        }
+
+        .pad-20 {
+            padding: 20px;
         }
 
         #example-container {
-            position: relative;
-            width: 200px;
-            height: 200px;
             border: 2px dotted #0000ff;
-            margin-top: 30px;
+            height: 300px;
+            margin: 30px auto;
+            position: relative;
+            width: 300px;
         }
 
         #example {
             border: 2px solid #ccc;
             top: 50px;
             left: 50px;
-        }
-
-        button:focus {
-            background-color: blue;
-            color: white;
         }
     </style>
 </head>
@@ -51,8 +64,8 @@
         <button id="fixed" onclick="setPosition()">fixed</button>
 
         <div id="example-container">
-            <p>some content</p>
-            <p id="example">Position</p>
+            <p class="marg-0 pad-20">some content</p>
+            <p class="bg-gray marg-0 pad-20" id="example">position: static;</p>
         </div>
 
     </div>
@@ -61,7 +74,7 @@
 
         function setPosition() {
             example.style.position = event.target.id;
-            setBackground(event.target);
+            example.innerText = 'position: ' + event.target.id + ';';
         }
     </script>
 </body>
