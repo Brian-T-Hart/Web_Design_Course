@@ -4,8 +4,8 @@
 document.getElementById('result').textContent = moment().format();
 document.getElementById('test').addEventListener('keyup', updateResult);
 
-function updateResult() {
-    var result = moment().format(event.target.value);
+function updateResult(e) {
+    var result = moment().format(e.target.value);
     document.getElementById('result').textContent = result;
 }
 
@@ -18,8 +18,8 @@ var d = moment().format('MM/DD/YYYY');              // 11/17/2019
 var e = moment().format('dddd');                    // Sunday
 var f = moment().format('YYYY [escaped] YYYY');     // 2019 escaped 2019
 
-console.log(a);
-console.log(b);
-console.log(c);
-console.log(d);
-console.log(e);
+// console.log(a);
+// console.log(b);
+// console.log(c);
+// console.log(d);
+// console.log(e);
