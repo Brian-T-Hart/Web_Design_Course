@@ -19,7 +19,11 @@ var listItemsByQuery = document.querySelectorAll('ol .todo-item');
 // console.log(listItemsByQuery);
 
 // -----------------------------------------------------------------
-function addToDo() {
+
+var formEl = document.getElementById('todo-form');
+formEl.addEventListener('submit', addToDo);
+
+function addToDo (event) {
     event.preventDefault();
     console.log(event.target.todo.value);
     var newToDo = event.target.todo.value;
@@ -27,4 +31,5 @@ function addToDo() {
     newListItem.textContent = newToDo;
     var listElement = document.querySelector('ol');
     listElement.appendChild(newListItem);
+    event.target.todo.value = '';
 }

@@ -6,6 +6,16 @@ body {
     margin: auto;
 }
 
+form {
+    box-sizing: border-box;
+    margin: 30px auto;
+    width: 240px;
+}
+
+input {
+    margin-bottom: 10px;
+}
+
 ol {
     background-color: #ccc;
     border: 1px solid #ccc;
