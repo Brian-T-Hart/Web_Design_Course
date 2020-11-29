@@ -35,7 +35,8 @@ function buildTodos(data) {
 function buildUsers(data) {
     const users = data.users;
 
-    var html = '<table id="users">';
+    var html = '<h2>Users Table</h2>';
+    html += '<table id="users">';
     html += '<tr><th>Username</th><th>Email</th></tr>';
     
     for (i = 0; i < users.length; i++) {
