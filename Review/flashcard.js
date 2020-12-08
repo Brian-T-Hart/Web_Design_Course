@@ -3,7 +3,7 @@ function Card(data) {
     this.num = localStorage.getItem('currentCard') || 0,
 
     this.getNext = () => {
-        if (this.num === data.length - 1) {
+        if ((this.num > this.data.length - 2) || (this.num < 0)) {
             this.num = 0;
         } else {
             this.num++;
@@ -16,8 +16,8 @@ function Card(data) {
     },
 
     this.getPrevious = () => {
-        if (this.num === 0) {
-            this.num = data.length - 1;
+        if (this.num < 1 && this.data.length > 0) {
+            this.num = this.data.length - 1;
         } else {
             this.num--;
         }
