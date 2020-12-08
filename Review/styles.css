@@ -37,7 +37,16 @@ body {
     width: 400px;
 }
 
+.card.back {
+    transform: rotateY(180deg);
+}
+
+.card.front {
+    position: absolute;
+}
+
 .card-body {
+    line-height: 1.5;
     min-height: 150px;
     padding: 10px 20px;
 }
@@ -59,14 +68,6 @@ body {
 
 .front .card-header {
     color: #228CDB;
-}
-
-.card.front {
-    position: absolute;
-}
-
-.card.back {
-    transform: rotateY(180deg);
 }
 
 .flip-container {
