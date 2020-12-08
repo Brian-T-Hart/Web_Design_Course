@@ -51,7 +51,7 @@ function Card(data) {
 
         let cardText = document.createElement('p');
         cardText.className = "card-text";
-        cardText.textContent = this.data[this.num].question;
+        cardText.innerHTML = this.escapeHTML(this.data[this.num].question);
 
         card.appendChild(cardHeader);
         card.appendChild(cardBody);
@@ -74,7 +74,7 @@ function Card(data) {
 
         let cardText = document.createElement('p');
         cardText.className = "card-text";
-        cardText.textContent = this.data[this.num].answer;
+        cardText.innerHTML = this.escapeHTML(this.data[this.num].answer);
 
         card.appendChild(cardHeader);
         card.appendChild(cardBody);
@@ -117,6 +117,15 @@ function Card(data) {
         containerEl.appendChild(nextBtn);
 
         return containerEl;
+    },
+
+    this.escapeHTML = (str) => {
+        str = str.replace(/&/g, "&amp;");
+        str = str.replace(/>/g, "&gt;");
+        str = str.replace(/</g, "&lt;");
+        str = str.replace(/"/g, "&quot;");
+        str = str.replace(/&lt;br&gt;/g, '<br>');
+        return str;
     }
 }
 
