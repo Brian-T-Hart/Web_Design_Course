@@ -12,7 +12,10 @@ body {
 
 #prev-btn, #next-btn {
     cursor: pointer;
-    margin: 20px;
+    font-size: 28px;
+    margin: 10px;
+    opacity: 0.9;
+    padding: 10px;
 }
 
 .card-container {
@@ -48,6 +51,14 @@ body {
 
 .card-header-text {
     margin: 0;
+}
+
+.back .card-header {
+    color: #CC2936;
+}
+
+.front .card-header {
+    color: #228CDB;
 }
 
 .card.front {

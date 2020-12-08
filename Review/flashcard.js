@@ -89,7 +89,8 @@ function Card(data) {
 
         let prevBtn = document.createElement('div');
         prevBtn.id = 'prev-btn';
-        prevBtn.textContent = 'Back';
+        // prevBtn.textContent = 'Back';
+        prevBtn.innerHTML = '<i class="fas fa-angle-left"></i>';
         prevBtn.addEventListener('click', this.getPrevious);
 
         let flipWrapper = document.createElement('div');
@@ -107,7 +108,8 @@ function Card(data) {
 
         let nextBtn = document.createElement('div');
         nextBtn.id = 'next-btn';
-        nextBtn.textContent = 'Next';
+        // nextBtn.textContent = 'Next';
+        nextBtn.innerHTML = '<i class="fas fa-angle-right"></i>';
         nextBtn.addEventListener('click', this.getNext);
 
         containerEl.appendChild(prevBtn);
