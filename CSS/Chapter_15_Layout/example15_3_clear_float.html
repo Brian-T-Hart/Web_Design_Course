@@ -1,0 +1,116 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Float</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            text-align: center;
+        }
+
+        button:focus {
+            background-color: blue;
+            color: white;
+        }
+
+        .container {
+            border: 2px dotted #0000FF;
+            margin: 2em auto;
+            max-width: 600px;
+            overflow: auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .box {
+            align-items: center;
+            border: 2px solid #000;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            float: none;
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+        }
+
+        .float-left {
+            float: left;
+        }
+
+        .float-right {
+            float: right;
+        }
+
+        .clear-left {
+            clear: left;
+        }
+
+        .clear-right {
+            clear: right;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .marg-20 {
+            margin: 20px;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-left {
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="marg-20 text-center">Float</h1>
+
+    <button id="none" onclick="setFloat()" autofocus>none</button>
+    <button id="left" onclick="setFloat()">left</button>
+    <button id="right" onclick="setFloat()">right</button>
+    <br><br>
+    <button id="clear-left" onclick="clearFloat()">clear left</button>
+    <button id="clear-right" onclick="clearFloat()">clear right</button>
+    <button id="clear" onclick="clearFloat()">clear both</button>
+
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+
+        <div id="clear-it"></div>
+
+        <p class="text-left">Some text that gets pulled next to a box when float is used on the boxes. It fills the available space and then spills out below the boxes. In order to stop the text from wrapping, we insert a div after the boxes and add a clear property with the value of left, right, or both.</p>
+
+    </div>
+
+    <script>
+        var clearEl = document.getElementById('clear-it');
+
+        function setFloat() {
+            var boxes = document.querySelectorAll('.box');
+
+            for (i = 0; i < boxes.length; i++) {
+                boxes[i].style.cssFloat = event.target.id;
+            }
+
+            clearEl.className = '';
+        }
+
+        function clearFloat() {
+            clearEl.className = event.target.id;
+        }
+    </script>
+</body>
+
+</html>
