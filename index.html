@@ -1,229 +1,224 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <title>Web Design</title>
-    </head>
 
-    <style>
-        body {
-            margin: 0;
-            padding: 0 25px 50px;
-        }
+<head>
+    <title>Web Design</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
 
-        .hidden {
-            display: none;
-        }
+<body>
+    <h1>Web Design Examples</h1>
 
-        li.chapter-title {
-            cursor: pointer;
-        }
-
-        li.chapter-title:hover {
-            color: blue;
-        }
-    </style>
-
-    <body>
-        <h1>Web Design Examples</h1>
-
-        <h3>HTML</h3>
-        <ul>
-            <li class="chapter-title">Chapter 1: Structure</li>
-                <ul class="hidden">
-                    <li><a href="HTML/Chapter_1_Structure/example1_1.html">Basic HTML Structure</a></li>
-                </ul>
-            <li class="chapter-title">Chapter 2: Text</li>
-                <ul class="hidden">
-                    <li><a href="HTML/Chapter_2_Text/example2_1_headings.html">Headings</a></li>
-                    <li><a href="HTML/Chapter_2_Text/example2_2_paragraphs.html">Paragraphs</a></li>
-                    <li><a href="HTML/Chapter_2_Text/example2_3_Bold_Italic.html">Bold & Italic</a></li>
-                    <li><a href="HTML/Chapter_2_Text/example2_4_sup_sub.html">Subscript & Superscript</a></li>
-                    <li><a href="HTML/Chapter_2_Text/example2_5_br.html">Line Break & Horizontal Rule</a></li>
-                    <li><a href="HTML/Chapter_2_Text/example2_6_strong_em.html">Strong & Emphasis</a></li>
-                    <li><a href="HTML/Chapter_2_Text/example2_7_quotation.html">Quotes</a></li>
-                    <li><a href="HTML/Chapter_2_Text/example2_8_abbr.html">Abbreviations & Acronyms</a></li>
-                    <li><a href="HTML/Chapter_2_Text/example2_9_cite_dfn.html">Cite & Define</a></li>
-                    <li><a href="HTML/Chapter_2_Text/example2_10_address.html">Address</a></li>
-                    <li><a href="HTML/Chapter_2_Text/example2_11_ins_del_s.html">Changes to Text</a></li>
-                </ul>
-            <li class="chapter-title">Chapter 3: Lists</li>
-                <ul class="hidden">
-                    <li><a href="HTML/Chapter_3_Lists/example3_1_ol.html">Ordered Lists</a></li>
-                    <li><a href="HTML/Chapter_3_Lists/example3_2_ul.html">Unordered Lists</a></li>
-                    <li><a href="HTML/Chapter_3_Lists/example3_3_dl.html">Definition Lists</a></li>
-                    <li><a href="HTML/Chapter_3_Lists/example3_4_nested_lists.html">Nested List</a></li>
-                </ul>
-            <li class="chapter-title">Chapter 4: Links</li>
-                <ul class="hidden">
-                    <li><a href="HTML/Chapter_4_Links/example4_1_a.html">Absolute URL</a></li>
-                    <li><a href="HTML/Chapter_4_Links/example4_2_a.html">Relative URL</a></li>
-                    <li><a href="HTML/Chapter_4_Links/example4_3_mailto.html">Send Mail</a></li>
-                    <li><a href="HTML/Chapter_4_Links/example4_4_blank.html">Open Link in New Tab</a></li>
-                    <li><a href="HTML/Chapter_4_Links/example4_5_id.html">Link to Section on Same Page</a></li>
-                    <li><a href="HTML/Chapter_4_Links/example4_6_otherPageId.html">Link to Section on Other Page</a></li>
-                </ul>
-            <li class="chapter-title">Chapter 5: Images</li>
-                <ul class="hidden">
-                    <li><a href="HTML/Chapter_5_Images/example5_1_img.html">Basic Image</a></li>
-                    <li><a href="HTML/Chapter_5_Images/example5_2_img_placement.html">Image Placement</a></li>
-                    <li><a href="HTML/Chapter_5_Images/example5_3_img_align.html">Image Alignment (CSS)</a></li>
-                    <li><a href="HTML/Chapter_5_Images/example5_4_svg.html">SVG Example</a></li>
-                    <li><a href="HTML/Chapter_5_Images/example5_5_figure.html">Figure</a></li>
-                </ul>
-            <li class="chapter-title">Chapter 6: Tables</li>
-                <ul class="hidden">
-                    <li><a href="HTML/Chapter_6_Tables/example6_1_table_basic.html">Basic Table</a></li>
-                    <li><a href="HTML/Chapter_6_Tables/example6_2_table_col_headings.html">Column Headings</a></li>
-                    <li><a href="HTML/Chapter_6_Tables/example6_3_table_row_headings.html">Row Headings</a></li>
-                    <li><a href="HTML/Chapter_6_Tables/example6_4_table_span_columns.html">Spanning Columns</a></li>
-                    <li><a href="HTML/Chapter_6_Tables/example6_5_table_span_rows.html">Spanning Rows</a></li>
-                </ul>
-            <li class="chapter-title">Chapter 7: Forms</li>
-                <ul class="hidden">
-                    <li><a href="HTML/Chapter_7_Forms/example7_1_form_structure.html">Form Structure</a></li>
-                    <li><a href="HTML/Chapter_7_Forms/example7_2_form_input_text.html">Text Input</a></li>
-                    <li><a href="HTML/Chapter_7_Forms/example7_3_form_input_password.html">Password Input</a></li>
-                    <li><a href="HTML/Chapter_7_Forms/example7_4_form_textarea.html">Textarea</a></li>
-                    <li><a href="HTML/Chapter_7_Forms/example7_5_form_select.html">Select</a></li>
-                    <li><a href="HTML/Chapter_7_Forms/example7_6_form_fieldset.html">Fieldset</a></li>
-                    <li><a href="HTML/Chapter_7_Forms/example7_7_input_types.html">Input Types</a></li>
-                    <li><a href="HTML/Chapter_7_Forms/example7_8_input_types_with_fieldset.html">Input Types with Fieldset</a></li>
-                </ul>
-            <li class="chapter-title">Chapter 8: Other Markup</li>
-                <ul class="hidden">
-                    <li><a href="HTML/Chapter_8_Other_Markup/example8_1_comments.html">comments</a></li>
-                    <li><a href="HTML/Chapter_8_Other_Markup/example8_2_id.html">id and class</a></li>
-                    <li><a href="HTML/Chapter_8_Other_Markup/example8_3_div.html">div</a></li>
-                    <li><a href="HTML/Chapter_8_Other_Markup/example8_4_html5_elements.html">HTML5 elements</a></li>
-                    <li><a href="HTML/Chapter_8_Other_Markup/example8_5_span.html">span</a></li>
-                    <li><a href="HTML/Chapter_8_Other_Markup/example8_6_iframe.html">iframe</a></li>
-                    <li><a href="HTML/Chapter_8_Other_Markup/example8_7_iframes2.html">iframe2</a></li>
-                    <li><a href="HTML/Chapter_8_Other_Markup/example8_8_meta.html">meta tags</a></li>
-                    <li><a href="HTML/Chapter_8_Other_Markup/example8_9_escape.html">escape characters</a></li>
-                </ul>
-            <li class="chapter-title">Chapter 9: Video & Audio</li>
-                <ul class="hidden">
-                    <li><a href="HTML/Chapter_9_Video_Audio/example9_1_video.html">video</a></li>
-                    <li><a href="HTML/Chapter_9_Video_Audio/example9_2_video_autoplay.html">autoplay</a></li>
-                    <li><a href="HTML/Chapter_9_Video_Audio/example9_3_video_loop.html">loop</a></li>
-                    <li><a href="HTML/Chapter_9_Video_Audio/example9_4_video_poster.html">poster</a></li>
-                    <li><a href="HTML/Chapter_9_Video_Audio/example9_5_video_multiple_sources.html">video - multiple sources</a></li>
-                    <li><a href="HTML/Chapter_9_Video_Audio/example9_6_audio.html">audio</a></li>
-                    <li><a href="HTML/Chapter_9_Video_Audio/example9_7_audio_multiple_sources.html">audio - multiple sources</a></li>
-                </ul>
+    <h2>HTML</h2>
+    <ul>
+        <li class="chapter-title">Chapter 1: Structure</li>
+        <ul class="hidden">
+            <li><a href="HTML/Chapter_1_Structure/example1_1.html">Basic HTML Structure</a></li>
         </ul>
-
-        <h3>CSS</h3>
-        <ul>
-            <li class="chapter-title">Chapter 10: Introduction to CSS</li>
-                <ul class="hidden">
-                    <li><a href="CSS/Chapter_10_Intro_To_CSS/example10_1_boxes.html">Think Inside the Box</a></li>
-                    <li><a href="CSS/Chapter_10_Intro_To_CSS/example10_2_external.html">External CSS</a></li>
-                    <li><a href="CSS/Chapter_10_Intro_To_CSS/example10_3_internal.html">Internal CSS</a></li>
-                    <li><a href="CSS/Chapter_10_Intro_To_CSS/example10_4_inline.html">Inline CSS</a></li>
-                    <li><a href="CSS/Chapter_10_Intro_To_CSS/example10_5_selectors/example10_5_selectors.html">CSS Selectors</a></li>
-                </ul>
-            <li class="chapter-title">Chapter 11: CSS Color</li>
-                <ul class="hidden">
-                    <li><a href="CSS/Chapter_11_Color/example11_1_color.html">Color</a></li>
-                    <li><a href="CSS/Chapter_11_Color/example11_2_rgb.html">RGB</a></li>
-                    <li><a href="CSS/Chapter_11_Color/example11_3_contrast.html">Contrast</a></li>
-                    <li><a href="CSS/Chapter_11_Color/example11_4_opacity.html">Opacity</a></li>
-                    <li><a href="CSS/Chapter_11_Color/example11_5_rgba.html">RGBA</a></li>
-                    <li><a href="CSS/Chapter_11_Color/example11_6_hsl.html">HSL</a></li>
-                </ul>
-            <li class="chapter-title">Chapter 12: CSS Text</li>
-                <ul class="hidden">
-                    <li><a href="CSS/Chapter_12_Text/example12_1_typeface.html">Typeface</a></li>
-                    <li><a href="CSS/Chapter_12_Text/example12_2_font_size.html">Font Size</a></li>
-                    <li><a href="CSS/Chapter_12_Text/example12_3_font_style.html">Font Style</a></li>
-                    <li><a href="CSS/Chapter_12_Text/example12_4_text_transform.html">Text Transform</a></li>
-                    <li><a href="CSS/Chapter_12_Text/example12_5_text_decoration.html">Text Decoration</a></li>
-                    <li><a href="CSS/Chapter_12_Text/example12_6_line_height.html">Line Height</a></li>
-                    <li><a href="CSS/Chapter_12_Text/example12_7_letter_spacing.html">Letter Spacing</a></li>
-                    <li><a href="CSS/Chapter_12_Text/example12_8_word_spacing.html">Word Spacing</a></li>
-                    <li><a href="CSS/Chapter_12_Text/example12_9_text_indent.html">Text Indent</a></li>
-                    <li><a href="CSS/Chapter_12_Text/example12_10_text_shadow.html">Text Shadow</a></li>
-                    <li><a href="CSS/Chapter_12_Text/example12_11_pseudo_elements.html">Pseudo Elements</a></li>
-                    <li><a href="CSS/Chapter_12_Text/example12_12_pseudo_classes.html">Pseudo Classes</a></li>
-                </ul>
-            <li class="chapter-title">Chapter 13: CSS Boxes</li>
-                <ul class="hidden">
-                    <li><a href="CSS/Chapter_13_Boxes/example13_1_Boxes.html">Boxes</a></li>
-                    <li><a href="CSS/Chapter_13_Boxes/example13_2_limiting.html">Limiting Dimensions</a></li>
-                    <li><a href="CSS/Chapter_13_Boxes/example13_3_borders.html">Borders</a></li>
-                    <li><a href="CSS/Chapter_13_Boxes/example13_4_overflow.html">Overflow</a></li>
-                    <li><a href="CSS/Chapter_13_Boxes/example13_5_centering.html">Centering</a></li>
-                    <li><a href="CSS/Chapter_13_Boxes/example13_6_box_shadow.html">Box-Shadow</a></li>
-                    <li><a href="CSS/Chapter_13_Boxes/example13_7_border_radius.html">Border Radius</a></li>
-                </ul>
-            <li class="chapter-title">Chapter 14: CSS Lists, Tables and Forms</li>
-                <ul class="hidden">
-                    <li><a href="CSS/Chapter_14_Lists_Tables_Forms/example14_1_ul.html">Lists</a></li>
-                    <li><a href="CSS/Chapter_14_Lists_Tables_Forms/example14_2_list_style_position.html">Position</a></li>
-                    <li><a href="CSS/Chapter_14_Lists_Tables_Forms/example14_3_tables.html">Tables</a></li>
-                    <li><a href="CSS/Chapter_14_Lists_Tables_Forms/example14_4_border_spacing.html">Border Spacing</a></li>
-                    <li><a href="CSS/Chapter_14_Lists_Tables_Forms/example14_5_table_caption.html">Table Captions</a></li>
-                    <li><a href="CSS/Chapter_14_Lists_Tables_Forms/example14_6_empty_cells.html">Empty Cells</a></li>
-                    <li><a href="CSS/Chapter_14_Lists_Tables_Forms/example14_7_cursor_styles.html">Cursor Styles</a></li>
-                </ul>
-            <li class="chapter-title">Chapter 15: Layout</li>
-                <ul class="hidden">
-                    <li><a href="CSS/Chapter_15_Layout/example15_1_position.html">Position</a></li>
-                    <li><a href="CSS/Chapter_15_Layout/example15_2_z_index.html">Z-Index</a></li>
-                    <li><a href="CSS/Chapter_15_Layout/example15_3_float.html">Float</a></li>
-                    <li><a href="CSS/Chapter_15_Layout/example15_4_layout_960.html">960px Grid Layout 1</a></li>
-                    <li><a href="CSS/Chapter_15_Layout/example15_5_grid_options.html">960px Grid Layout 2</a></li>
-                    <li><a href="CSS/Chapter_15_Layout/example15_7_layout_flex.html">Flexible Layout</a></li>
-                    <li><a href="CSS/Chapter_15_Layout/example15_6_media_queries.html">Media Queries</a></li>
-                </ul>
+        <li class="chapter-title">Chapter 2: Text</li>
+        <ul class="hidden">
+            <li><a href="HTML/Chapter_2_Text/example2_1_headings.html">Headings</a></li>
+            <li><a href="HTML/Chapter_2_Text/example2_2_paragraphs.html">Paragraphs</a></li>
+            <li><a href="HTML/Chapter_2_Text/example2_3_Bold_Italic.html">Bold & Italic</a></li>
+            <li><a href="HTML/Chapter_2_Text/example2_4_sup_sub.html">Subscript & Superscript</a></li>
+            <li><a href="HTML/Chapter_2_Text/example2_5_br.html">Line Break & Horizontal Rule</a></li>
+            <li><a href="HTML/Chapter_2_Text/example2_6_strong_em.html">Strong & Emphasis</a></li>
+            <li><a href="HTML/Chapter_2_Text/example2_7_quotation.html">Quotes</a></li>
+            <li><a href="HTML/Chapter_2_Text/example2_8_abbr.html">Abbreviations & Acronyms</a></li>
+            <li><a href="HTML/Chapter_2_Text/example2_9_cite_dfn.html">Cite & Define</a></li>
+            <li><a href="HTML/Chapter_2_Text/example2_10_address.html">Address</a></li>
+            <li><a href="HTML/Chapter_2_Text/example2_11_ins_del_s.html">Changes to Text</a></li>
         </ul>
-
-        <h3>JavaScript</h3>
-        <ul>
-            <li class="chapter-title">Lesson 1: The ABC of Programming</li>
-                <ul class="hidden">
-                    <li><a href="JavaScript/Chapter_1_abc_of_programming\example1_1_define_design.html">JavaScript Intro</a></li>
-                    <li><a href="JavaScript/Chapter_1_abc_of_programming\example1_2_models.html">Models</a></li>
-                </ul>
-            <li class="chapter-title">Lesson 2: Basic JavaScript Instruction</li>
-                <ul class="hidden">
-                    <li><a href="JavaScript/Chapter_2_basic_js_instructions\example2_1_terminology.html">JavaScript Terminology</a></li>
-                    <li><a href="JavaScript/Chapter_2_basic_js_instructions\example2_2_variables.html">JavaScript Variables</a></li>
-                    <li><a href="JavaScript/Chapter_2_basic_js_instructions\example2_4_Numbers.html">JavaScript Numbers</a></li>
-                    <li><a href="JavaScript/Chapter_2_basic_js_instructions\example2_5_variable_naming.html">JavaScript Variable Naming</a></li>
-                    <li><a href="JavaScript/Chapter_2_basic_js_instructions\example2_6_arrays.html">JavaScript Arrays</a></li>
-                </ul>
-            <li class="chapter-title">Lesson 3: Functions, Methods, and Objects</li>
-                <ul class="hidden">
-                    <li><a href="JavaScript/Chapter_3_functions_methods_objects/example3_1_Functions/index.html">Functions</a></li>
-                    <li><a href="JavaScript/Chapter_3_functions_methods_objects/example3_2_Objects/index.html">Objects</a></li>
-                    <li><a href="JavaScript/Chapter_3_functions_methods_objects/Example3_3_Constructor/index.html">Constructor</a></li>
-                </ul>
-            <li class="chapter-title">Lesson 4: Decisions and Loops</li>
-                <ul class="hidden">
-                    <li><a href="JavaScript/Chapter_4_decisions_loops/example4_1_Conditionals/index.html">Conditionals</a></li>
-                    <li><a href="JavaScript/Chapter_4_decisions_loops/example4_2_Loops/index.html">Loops</a></li>
-                </ul>
-            <li class="chapter-title">Lesson 5: Document Object Model</li>
-                <ul class="hidden">
-                    <li><a href="JavaScript/Chapter_5_document_object_model/example5_1/index.html">The DOM</a></li>
-                </ul>
-            <li class="chapter-title">Lesson 6: Events</li>
-                <ul class="hidden">
-                    <li><a href="JavaScript/Chapter_6_events/Date-and-Time/clock/index.html">Clock</a></li>
-                    <li><a href="JavaScript/Chapter_6_events/Date-and-Time/timer/index.html">Timer</a></li>
-                    <li><a href="JavaScript/Chapter_6_events/Date-and-Time/moment/index.html">Moment</a></li>
-                </ul>
-            <li class="chapter-title">Lesson 7: More</li>
-                <ul class="hidden">
-                    <li><a href="JavaScript/Fetch/index.html">Fetch</a></li>
-                </ul>
+        <li class="chapter-title">Chapter 3: Lists</li>
+        <ul class="hidden">
+            <li><a href="HTML/Chapter_3_Lists/example3_1_ol.html">Ordered Lists</a></li>
+            <li><a href="HTML/Chapter_3_Lists/example3_2_ul.html">Unordered Lists</a></li>
+            <li><a href="HTML/Chapter_3_Lists/example3_3_dl.html">Definition Lists</a></li>
+            <li><a href="HTML/Chapter_3_Lists/example3_4_nested_lists.html">Nested List</a></li>
         </ul>
-        <h3>Review</h3>
-        <ul>
-            <li><a href="Review/index.html">Flashcards</a></li>
-    <script src="index.js"></script>
-    </body>
+        <li class="chapter-title">Chapter 4: Links</li>
+        <ul class="hidden">
+            <li><a href="HTML/Chapter_4_Links/example4_1_a.html">Absolute URL</a></li>
+            <li><a href="HTML/Chapter_4_Links/example4_2_a.html">Relative URL</a></li>
+            <li><a href="HTML/Chapter_4_Links/example4_3_mailto.html">Send Mail</a></li>
+            <li><a href="HTML/Chapter_4_Links/example4_4_blank.html">Open Link in New Tab</a></li>
+            <li><a href="HTML/Chapter_4_Links/example4_5_id.html">Link to Section on Same Page</a></li>
+            <li><a href="HTML/Chapter_4_Links/example4_6_otherPageId.html">Link to Section on Other Page</a></li>
+        </ul>
+        <li class="chapter-title">Chapter 5: Images</li>
+        <ul class="hidden">
+            <li><a href="HTML/Chapter_5_Images/example5_1_img.html">Basic Image</a></li>
+            <li><a href="HTML/Chapter_5_Images/example5_2_img_placement.html">Image Placement</a></li>
+            <li><a href="HTML/Chapter_5_Images/example5_3_img_align.html">Image Alignment (CSS)</a></li>
+            <li><a href="HTML/Chapter_5_Images/example5_4_svg.html">SVG Example</a></li>
+            <li><a href="HTML/Chapter_5_Images/example5_5_figure.html">Figure</a></li>
+        </ul>
+        <li class="chapter-title">Chapter 6: Tables</li>
+        <ul class="hidden">
+            <li><a href="HTML/Chapter_6_Tables/example6_1_table_basic.html">Basic Table</a></li>
+            <li><a href="HTML/Chapter_6_Tables/example6_2_table_col_headings.html">Column Headings</a></li>
+            <li><a href="HTML/Chapter_6_Tables/example6_3_table_row_headings.html">Row Headings</a></li>
+            <li><a href="HTML/Chapter_6_Tables/example6_4_table_span_columns.html">Spanning Columns</a></li>
+            <li><a href="HTML/Chapter_6_Tables/example6_5_table_span_rows.html">Spanning Rows</a></li>
+        </ul>
+        <li class="chapter-title">Chapter 7: Forms</li>
+        <ul class="hidden">
+            <li><a href="HTML/Chapter_7_Forms/example7_1_form_structure.html">Form Structure</a></li>
+            <li><a href="HTML/Chapter_7_Forms/example7_2_form_input_text.html">Text Input</a></li>
+            <li><a href="HTML/Chapter_7_Forms/example7_3_form_input_password.html">Password Input</a></li>
+            <li><a href="HTML/Chapter_7_Forms/example7_4_form_textarea.html">Textarea</a></li>
+            <li><a href="HTML/Chapter_7_Forms/example7_5_form_select.html">Select</a></li>
+            <li><a href="HTML/Chapter_7_Forms/example7_6_form_fieldset.html">Fieldset</a></li>
+            <li><a href="HTML/Chapter_7_Forms/example7_7_input_types.html">Input Types</a></li>
+            <li><a href="HTML/Chapter_7_Forms/example7_8_input_types_with_fieldset.html">Input Types with Fieldset</a>
+            </li>
+        </ul>
+        <li class="chapter-title">Chapter 8: Other Markup</li>
+        <ul class="hidden">
+            <li><a href="HTML/Chapter_8_Other_Markup/example8_1_comments.html">comments</a></li>
+            <li><a href="HTML/Chapter_8_Other_Markup/example8_2_id.html">id and class</a></li>
+            <li><a href="HTML/Chapter_8_Other_Markup/example8_3_div.html">div</a></li>
+            <li><a href="HTML/Chapter_8_Other_Markup/example8_4_html5_elements.html">HTML5 elements</a></li>
+            <li><a href="HTML/Chapter_8_Other_Markup/example8_5_span.html">span</a></li>
+            <li><a href="HTML/Chapter_8_Other_Markup/example8_6_iframe.html">iframe</a></li>
+            <li><a href="HTML/Chapter_8_Other_Markup/example8_7_iframes2.html">iframe2</a></li>
+            <li><a href="HTML/Chapter_8_Other_Markup/example8_8_meta.html">meta tags</a></li>
+            <li><a href="HTML/Chapter_8_Other_Markup/example8_9_escape.html">escape characters</a></li>
+        </ul>
+        <li class="chapter-title">Chapter 9: Video & Audio</li>
+        <ul class="hidden">
+            <li><a href="HTML/Chapter_9_Video_Audio/example9_1_video.html">video</a></li>
+            <li><a href="HTML/Chapter_9_Video_Audio/example9_2_video_autoplay.html">autoplay</a></li>
+            <li><a href="HTML/Chapter_9_Video_Audio/example9_3_video_loop.html">loop</a></li>
+            <li><a href="HTML/Chapter_9_Video_Audio/example9_4_video_poster.html">poster</a></li>
+            <li><a href="HTML/Chapter_9_Video_Audio/example9_5_video_multiple_sources.html">video - multiple sources</a>
+            </li>
+            <li><a href="HTML/Chapter_9_Video_Audio/example9_6_audio.html">audio</a></li>
+            <li><a href="HTML/Chapter_9_Video_Audio/example9_7_audio_multiple_sources.html">audio - multiple sources</a>
+            </li>
+        </ul>
+    </ul>
+
+    <h2>CSS</h2>
+    <ul>
+        <li class="chapter-title">Chapter 10: Introduction to CSS</li>
+        <ul class="hidden">
+            <li><a href="CSS/Chapter_10_Intro_To_CSS/example10_1_boxes.html">Think Inside the Box</a></li>
+            <li><a href="CSS/Chapter_10_Intro_To_CSS/example10_2_external.html">External CSS</a></li>
+            <li><a href="CSS/Chapter_10_Intro_To_CSS/example10_3_internal.html">Internal CSS</a></li>
+            <li><a href="CSS/Chapter_10_Intro_To_CSS/example10_4_inline.html">Inline CSS</a></li>
+            <li><a href="CSS/Chapter_10_Intro_To_CSS/example10_5_selectors/example10_5_selectors.html">CSS Selectors</a>
+            </li>
+        </ul>
+        <li class="chapter-title">Chapter 11: CSS Color</li>
+        <ul class="hidden">
+            <li><a href="CSS/Chapter_11_Color/example11_1_color.html">Color</a></li>
+            <li><a href="CSS/Chapter_11_Color/example11_2_rgb.html">RGB</a></li>
+            <li><a href="CSS/Chapter_11_Color/example11_3_contrast.html">Contrast</a></li>
+            <li><a href="CSS/Chapter_11_Color/example11_4_opacity.html">Opacity</a></li>
+            <li><a href="CSS/Chapter_11_Color/example11_5_rgba.html">RGBA</a></li>
+            <li><a href="CSS/Chapter_11_Color/example11_6_hsl.html">HSL</a></li>
+        </ul>
+        <li class="chapter-title">Chapter 12: CSS Text</li>
+        <ul class="hidden">
+            <li><a href="CSS/Chapter_12_Text/example12_1_typeface.html">Typeface</a></li>
+            <li><a href="CSS/Chapter_12_Text/example12_2_font_size.html">Font Size</a></li>
+            <li><a href="CSS/Chapter_12_Text/example12_3_font_style.html">Font Style</a></li>
+            <li><a href="CSS/Chapter_12_Text/example12_4_text_transform.html">Text Transform</a></li>
+            <li><a href="CSS/Chapter_12_Text/example12_5_text_decoration.html">Text Decoration</a></li>
+            <li><a href="CSS/Chapter_12_Text/example12_6_line_height.html">Line Height</a></li>
+            <li><a href="CSS/Chapter_12_Text/example12_7_letter_spacing.html">Letter Spacing</a></li>
+            <li><a href="CSS/Chapter_12_Text/example12_8_word_spacing.html">Word Spacing</a></li>
+            <li><a href="CSS/Chapter_12_Text/example12_9_text_indent.html">Text Indent</a></li>
+            <li><a href="CSS/Chapter_12_Text/example12_10_text_shadow.html">Text Shadow</a></li>
+            <li><a href="CSS/Chapter_12_Text/example12_11_pseudo_elements.html">Pseudo Elements</a></li>
+            <li><a href="CSS/Chapter_12_Text/example12_12_pseudo_classes.html">Pseudo Classes</a></li>
+        </ul>
+        <li class="chapter-title">Chapter 13: CSS Boxes</li>
+        <ul class="hidden">
+            <li><a href="CSS/Chapter_13_Boxes/example13_1_Boxes.html">Boxes</a></li>
+            <li><a href="CSS/Chapter_13_Boxes/example13_2_limiting.html">Limiting Dimensions</a></li>
+            <li><a href="CSS/Chapter_13_Boxes/example13_3_borders.html">Borders</a></li>
+            <li><a href="CSS/Chapter_13_Boxes/example13_4_overflow.html">Overflow</a></li>
+            <li><a href="CSS/Chapter_13_Boxes/example13_5_centering.html">Centering</a></li>
+            <li><a href="CSS/Chapter_13_Boxes/example13_6_box_shadow.html">Box-Shadow</a></li>
+            <li><a href="CSS/Chapter_13_Boxes/example13_7_border_radius.html">Border Radius</a></li>
+        </ul>
+        <li class="chapter-title">Chapter 14: CSS Lists, Tables and Forms</li>
+        <ul class="hidden">
+            <li><a href="CSS/Chapter_14_Lists_Tables_Forms/example14_1_ul.html">Lists</a></li>
+            <li><a href="CSS/Chapter_14_Lists_Tables_Forms/example14_2_list_style_position.html">Position</a></li>
+            <li><a href="CSS/Chapter_14_Lists_Tables_Forms/example14_3_tables.html">Tables</a></li>
+            <li><a href="CSS/Chapter_14_Lists_Tables_Forms/example14_4_border_spacing.html">Border Spacing</a></li>
+            <li><a href="CSS/Chapter_14_Lists_Tables_Forms/example14_5_table_caption.html">Table Captions</a></li>
+            <li><a href="CSS/Chapter_14_Lists_Tables_Forms/example14_6_empty_cells.html">Empty Cells</a></li>
+            <li><a href="CSS/Chapter_14_Lists_Tables_Forms/example14_7_cursor_styles.html">Cursor Styles</a></li>
+        </ul>
+        <li class="chapter-title">Chapter 15: Layout</li>
+        <ul class="hidden">
+            <li><a href="CSS/Chapter_15_Layout/example15_1_position.html">Position</a></li>
+            <li><a href="CSS/Chapter_15_Layout/example15_2_z_index.html">Z-Index</a></li>
+            <li><a href="CSS/Chapter_15_Layout/example15_3_float.html">Float</a></li>
+            <li><a href="CSS/Chapter_15_Layout/example15_4_layout_960.html">960px Grid Layout 1</a></li>
+            <li><a href="CSS/Chapter_15_Layout/example15_5_grid_options.html">960px Grid Layout 2</a></li>
+            <li><a href="CSS/Chapter_15_Layout/example15_7_layout_flex.html">Flexible Layout</a></li>
+            <li><a href="CSS/Chapter_15_Layout/example15_6_media_queries.html">Media Queries</a></li>
+        </ul>
+    </ul>
+
+    <h2>JavaScript</h2>
+    <ul>
+        <li class="chapter-title">Lesson 1: The ABC of Programming</li>
+        <ul class="hidden">
+            <li><a href="JavaScript/Chapter_1_abc_of_programming\example1_1_define_design.html">JavaScript Intro</a>
+            </li>
+            <li><a href="JavaScript/Chapter_1_abc_of_programming\example1_2_models.html">Models</a></li>
+        </ul>
+        <li class="chapter-title">Lesson 2: Basic JavaScript Instruction</li>
+        <ul class="hidden">
+            <li><a href="JavaScript/Chapter_2_basic_js_instructions\example2_1_terminology.html">JavaScript
+                    Terminology</a></li>
+            <li><a href="JavaScript/Chapter_2_basic_js_instructions\example2_2_variables.html">JavaScript Variables</a>
+            </li>
+            <li><a href="JavaScript/Chapter_2_basic_js_instructions\example2_4_Numbers.html">JavaScript Numbers</a></li>
+            <li><a href="JavaScript/Chapter_2_basic_js_instructions\example2_5_variable_naming.html">JavaScript Variable
+                    Naming</a></li>
+            <li><a href="JavaScript/Chapter_2_basic_js_instructions\example2_6_arrays.html">JavaScript Arrays</a></li>
+        </ul>
+        <li class="chapter-title">Lesson 3: Functions, Methods, and Objects</li>
+        <ul class="hidden">
+            <li><a href="JavaScript/Chapter_3_functions_methods_objects/example3_1_Functions/index.html">Functions</a>
+            </li>
+            <li><a href="JavaScript/Chapter_3_functions_methods_objects/example3_2_Objects/index.html">Objects</a></li>
+            <li><a
+                    href="JavaScript/Chapter_3_functions_methods_objects/Example3_3_Constructor/index.html">Constructor</a>
+            </li>
+        </ul>
+        <li class="chapter-title">Lesson 4: Decisions and Loops</li>
+        <ul class="hidden">
+            <li><a href="JavaScript/Chapter_4_decisions_loops/example4_1_Conditionals/index.html">Conditionals</a></li>
+            <li><a href="JavaScript/Chapter_4_decisions_loops/example4_2_Loops/index.html">Loops</a></li>
+        </ul>
+        <li class="chapter-title">Lesson 5: Document Object Model</li>
+        <ul class="hidden">
+            <li><a href="JavaScript/Chapter_5_document_object_model/example5_1/index.html">The DOM</a></li>
+        </ul>
+        <li class="chapter-title">Lesson 6: Events</li>
+        <ul class="hidden">
+            <li><a href="JavaScript/Chapter_6_events/Date-and-Time/clock/index.html">Clock</a></li>
+            <li><a href="JavaScript/Chapter_6_events/Date-and-Time/timer/index.html">Timer</a></li>
+            <li><a href="JavaScript/Chapter_6_events/Date-and-Time/moment/index.html">Moment</a></li>
+        </ul>
+        <li class="chapter-title">Lesson 7: More</li>
+        <ul class="hidden">
+            <li><a href="JavaScript/Fetch/index.html">Fetch</a></li>
+        </ul>
+    </ul>
+    <h2>Review</h2>
+    <ul>
+        <li><a href="Review/index.html">Flashcards</a></li>
+        <script src="index.js"></script>
+</body>
+
 </html>
