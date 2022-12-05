@@ -1,11 +1,11 @@
-function battleBot(name) {
+function BattleBot(name) {
     this.name = name;
     this.strength = Math.floor((Math.random() * 61) + 40);
     this.attack = Math.floor((Math.random() * 31) + 10);
 }
 
-var bot1 = new battleBot('Pikachu');
-var bot2 = new battleBot('Charmander');
+var bot1 = new BattleBot('Pikachu');
+var bot2 = new BattleBot('Charmander');
 
 console.log(bot1, bot2);
 
