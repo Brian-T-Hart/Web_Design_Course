@@ -1,0 +1,28 @@
+body {
+    background-color: aqua;
+    margin: 0;
+    padding: 50px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    min-width: 100px;
+    padding: 5px;
+}
+
+th {
+    background-color: #efefef;
+}
+
+.container {
+    background-color: white;
+    margin: auto;
+    max-width: 90%;
+    padding: 30px;
+    width: 600px;
+}
