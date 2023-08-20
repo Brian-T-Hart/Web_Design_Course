@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    padding: 50px;
+    text-align: center;
+}
+
+#click-me {
+    background-color: blue;
+    /* border: 2px solid black; */
+    color: white;
+    cursor: pointer;
+    margin: 25px auto;
+    padding: 20px;
+    width: 200px;
+}
