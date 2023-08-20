@@ -1,6 +1,6 @@
-function multipleChoices1() {
-    var randomNumber = Math.floor(Math.random() * 10);
+const randomNumber = Math.floor(Math.random() * 10);
 
+function multipleChoices1(randomNumber) {
     if (randomNumber > 8) {
         alert(randomNumber + ': You win!');
     }
@@ -18,6 +18,8 @@ function multipleChoices1() {
     }
 }
 
+multipleChoices1(randomNumber);
+
 function multipleChoices2(num) {
 
     switch (num) {
@@ -33,6 +35,5 @@ function multipleChoices2(num) {
         default:
             document.write('It\'s not your lucky day!');
             break;
-    }
-    
+    }  
 }
