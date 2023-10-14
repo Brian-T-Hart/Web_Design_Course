@@ -47,9 +47,27 @@ body {
 
 .overflow-example {
     border: 1px solid silver;
-    height: 200px;
+    float: left;
+    height: 250px;
+    margin: 10px;
+    padding: 10px;
+    width: 180px;
+}
+
+.overflow-auto {
+    overflow: auto;
+}
+
+.overflow-scroll {
     overflow: scroll;
-    width: 300px;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.overflow-visible {
+    overflow: visible;
 }
 
 .text-center {
