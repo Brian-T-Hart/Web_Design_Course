@@ -1,0 +1,41 @@
+nav {
+    display: flex;
+    justify-content: end;
+    padding: 10px 50px;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+.dropdown-content {
+    visibility: hidden;
+    height: 0px;
+    background-color: #efefef;
+    padding: 20px;
+    transition-duration: 1s;
+}
+
+.dropdown-toggle:hover .dropdown-content {
+    visibility: visible;
+    height: 100px;
+}
+
+.box {
+    align-items: center;
+    background-color: chocolate;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    transition-duration: 1.5s;
+    transition-timing-function: ease-in-out;
+    width: 100px;
+}
+
+.box:hover {
+    width: 100%;
+}
