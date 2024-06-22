@@ -1,24 +1,17 @@
 const todosUrl = 'https://jsonplaceholder.typicode.com/todos';
 
-// check if fetch is available in the browser
-if (!('fetch' in window)) {
-    console.log('Fetch API not found');
-} 
-else {
-    console.log('You can use fetch');
-}
-
-//fetch the todos and add them to the DOM
 fetch(todosUrl)
 .then(function(response) {
     return response.json();
 })
-.then(function(json) {
-    return buildTodos(json);
+.then(function(todos) {
+    // console.log(todos);
+    buildTodos(todos);
 })
-.catch(function(error) {
-    console.log('error in todos catch', error);
+.catch(function(err) {
+    console.log(err);
 })
+
 
 function buildTodos(data) {
     const todos = data;
@@ -34,7 +27,3 @@ function buildTodos(data) {
     let todosEl = document.getElementById('todos-container');
     todosEl.innerHTML = html;
 }
-
-
-
-
