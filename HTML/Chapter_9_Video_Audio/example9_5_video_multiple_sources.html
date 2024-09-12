@@ -8,7 +8,7 @@
     body {
         padding: 100px;
     }
-    
+
     #content-container {
         margin: auto;
         max-width: 600px;
@@ -24,20 +24,19 @@
     <a id="home-link" href="../../index.html">Home</a>
     <div id="content-container">
 
-        
+
         <h3>Video with Multiple Sources</h3>
 
-    <!-- If the first source doesn't work, the browser will try the next -->
-
-        <video width="420" height="300" preload controls >
-            <source src="videos/ray.mp4" type='video/mp4;' />
-            <source src="videos/ray.webm" type='video/webm;' />
+        <!-- If the first source doesn't work, the browser will try the next -->
+        <video width="420" height="300" preload controls>
             <source src="videos/ray.oggtheora.ogv" type='video/ogg;' />
+            <source src="videos/ray.webm" type='video/webm;' />
+            <source src="videos/ray.mp4" type='video/mp4;' />
 
             <p>A video of a ray swimming toward the surface</p>
         </video>
 
-        
     </div>
 </body>
+
 </html>
