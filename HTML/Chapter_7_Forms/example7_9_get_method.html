@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+    <title>Form Structure</title>
+</head>
+
+<style>
+        body {
+            padding: 100px;
+        }
+        
+        #content-container {
+            height: 200px;
+            margin: auto;
+            width: 400px;
+        }
+
+        #home-link {
+            position: fixed;
+            top: 20px;
+        }
+</style>
+
+<body>
+    <a id="home-link" href="../../index.html">Home</a>
+    <div id="content-container">
+        <!-- This is a form using the get method -->
+
+        <form action="https://postman-echo.com/get" method="get">
+            <input type="text" name="name" placeholder="name" />
+            <input type="submit" value="submit" />
+        </form>
+
+
+    </div>
+</body>
+</html>
+  
