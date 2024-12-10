@@ -23,17 +23,24 @@ multipleChoices1(randomNumber);
 function multipleChoices2(num) {
 
     switch (num) {
-        case 1:
+        case 9:
+        case 8:
             document.write('You win!');
             break;
-        case 2:
+        case 7:
+        case 6:
             document.write('You came in second place!');
             break;
+        case 5:
+        case 4:
         case 3:
+        case 2:
             document.write('You got third place!');
             break;
         default:
             document.write('It\'s not your lucky day!');
             break;
-    }  
+    }
 }
+
+// multipleChoices2(randomNumber);
