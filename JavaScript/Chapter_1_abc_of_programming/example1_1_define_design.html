@@ -1,4 +1,6 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -56,6 +58,7 @@
         }
     </style>
 </head>
+
 <body>
     <form class="container" onsubmit="calculateCost()">
         <h2>Custom Signage</h2>
@@ -67,22 +70,23 @@
     </form>
     <h1 id="cost"></h1>
 
-<script>
-    function calculateCost() {
-        event.preventDefault(); //stop form from refreshing the page
+    <script>
+        function calculateCost() {
+            event.preventDefault(); //stop form from refreshing the page
 
-        var name = event.target.name.value; //get name and store in variable
+            var name = event.target.name.value; //get name and store in variable
 
-        if (name.length == 0) { //If nothing is entered, diplay error message
-            var error = document.getElementById('error-message');
-            error.style.display = 'inline';
+            if (name.length == 0) { //If nothing is entered, diplay error message
+                var error = document.getElementById('error-message');
+                error.style.display = 'inline';
+            }
+
+            else {
+                var cost = name.length * 5; //calculate cost
+                document.getElementById('cost').innerText = '$' + cost; //display cost
+            }
         }
-
-        else { 
-            var cost = name.length * 5; //calculate cost
-            document.getElementById('cost').innerText = '$' + cost; //display cost
-        }
-    }
-</script>
+    </script>
 </body>
+
 </html>
