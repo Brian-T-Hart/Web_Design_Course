@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 
+<html lang="en-us">
+
 <head>
 
     <title>meta tags</title>
@@ -28,7 +30,7 @@
     body {
         padding: 100px;
     }
-    
+
     #content-container {
         margin: auto;
         max-width: 400px;
@@ -49,18 +51,19 @@
 
         <h3 id="timer"></h3>
 
-        
+
     </div>
 
-<script>
-    var count = 0;
-    var timer = document.getElementById('timer');
+    <script>
+        var count = 0;
+        var timer = document.getElementById('timer');
 
-    setInterval(function() {
-        count = count + 1;
-        timer.innerHTML = count;
-    }, 1000);
+        setInterval(function () {
+            count = count + 1;
+            timer.innerHTML = count;
+        }, 1000);
 
-</script>
+    </script>
 </body>
+
 </html>
