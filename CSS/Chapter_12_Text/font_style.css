@@ -136,11 +136,11 @@ p.line-height {
 
 /* pseudo-elements */
 
-p.first-letter:first-letter {
+p.first-letter::first-letter {
     font-size: 200%;
 }
 
-p.first-line:first-line {
+p.first-line::first-line {
     font-weight: bold;
 }
 
