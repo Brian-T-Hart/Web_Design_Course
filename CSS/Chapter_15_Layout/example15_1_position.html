@@ -44,6 +44,7 @@
             height: 300px;
             margin: 30px auto;
             position: relative;
+            text-align: left;
             width: 300px;
         }
 
@@ -51,6 +52,7 @@
             border: 2px solid #ccc;
             top: 50px;
             left: 50px;
+            white-space: pre-line; /* preserve newlines when using textContent */
         }
     </style>
 </head>
@@ -59,10 +61,10 @@
     <div class="container">
         <h1>CSS Position</h1>
 
-        <button id="static" onclick="setPosition()" autofocus>static</button>
-        <button id="relative" onclick="setPosition()">relative</button>
-        <button id="absolute" onclick="setPosition()">absolute</button>
-        <button id="fixed" onclick="setPosition()">fixed</button>
+    <button id="static" autofocus>static</button>
+    <button id="relative">relative</button>
+    <button id="absolute">absolute</button>
+    <button id="fixed">fixed</button>
 
         <div id="example-container">
             <p class="marg-0 pad-20">some content</p>
@@ -71,12 +73,30 @@
 
     </div>
     <script>
-        const example = document.getElementById('example');
+        (function () {
+            const example = document.getElementById('example');
 
-        function setPosition() {
-            example.style.position = event.target.id;
-            example.innerText = 'position: ' + event.target.id + ';';
-        }
+            // allowed positions - validate input before applying to style
+            const allowed = new Set(['static', 'relative', 'absolute', 'fixed']);
+
+            function setPosition(e) {
+                const id = e && e.target && e.target.id;
+                console.log('id: ', id);
+                if (!allowed.has(id)) return;
+
+                // set CSS position safely
+                example.style.position = id;
+
+                // use textContent instead of innerHTML to avoid injecting HTML
+                example.textContent = 'position: ' + id + ';\n' + 'top: 50px;\n' + 'left: 50px;';
+            }
+
+            // wire up buttons using addEventListener instead of inline handlers
+            ['static', 'relative', 'absolute', 'fixed'].forEach(id => {
+                const btn = document.getElementById(id);
+                if (btn) btn.addEventListener('click', setPosition);
+            });
+        })();
     </script>
 </body>
 
