@@ -13,12 +13,14 @@
         }
 
         button:focus {
-            background-color: blue;
+            background-color: #279AF1;
+            border-color: #279AF1;
             color: white;
+            outline: none;
         }
 
         .container {
-            border: 2px dotted #0000FF;
+            border: 2px dotted #279AF1;
             margin: 2em auto;
             max-width: 600px;
             overflow: auto;
@@ -28,7 +30,7 @@
 
         .box {
             align-items: center;
-            border: 2px solid #000;
+            background-color: #279AF1;
             box-sizing: border-box;
             display: flex;
             justify-content: center;
@@ -75,9 +77,9 @@
 <body>
     <h1 class="marg-20 text-center">Float</h1>
 
-    <button id="none" onclick="setFloat()" autofocus>none</button>
-    <button id="left" onclick="setFloat()">left</button>
-    <button id="right" onclick="setFloat()">right</button>
+    <button class="float-btn active" id="none" onclick="setFloat()" autofocus>none</button>
+    <button class="float-btn" id="left" onclick="setFloat()">left</button>
+    <button class="float-btn" id="right" onclick="setFloat()">right</button>
     <br><br>
     <button id="clear-left" onclick="clearFloat()">clear left</button>
     <button id="clear-right" onclick="clearFloat()">clear right</button>
@@ -90,15 +92,24 @@
 
         <div id="clear-it"></div>
 
-        <p class="text-left">Some text that gets pulled next to a box when float is used on the boxes. It fills the available space and then spills out below the boxes. In order to stop the text from wrapping, we insert a div after the boxes and add a clear property with the value of left, right, or both.</p>
+        <p class="text-left">Some text that gets pulled next to a box when float is used on the boxes. It fills the
+            available space and then spills out below the boxes. In order to stop the text from wrapping, we insert a
+            div after the boxes and add a clear property with the value of left, right, or both.</p>
 
     </div>
 
     <script>
-        var clearEl = document.getElementById('clear-it');
+        const clearEl = document.getElementById('clear-it');
 
         function setFloat() {
-            var boxes = document.querySelectorAll('.box');
+            const boxes = document.querySelectorAll('.box');
+            const floatBtns = document.querySelectorAll('.float-btn');
+
+            for (i = 0; i < floatBtns.length; i++) {
+                floatBtns[i].classList.remove('active');
+            }
+
+            event.target.classList.add('active');
 
             for (i = 0; i < boxes.length; i++) {
                 boxes[i].style.cssFloat = event.target.id;
